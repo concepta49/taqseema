@@ -235,7 +235,7 @@ const [counterOn, setCounterOn] = useState(false);
                       <h4 className="text-5xl md:text-5xl lg:text-8xl font-bold text-white lg:text-left text-center lg:mt-0 mt-12 ">
                         PLAYING MADE EASY
                       </h4>
-                      <p className="text-3xl mt-4 lg:text-left text-center lg:mt-0 mt-12">
+                      <p className="text-3xl lg:mt-4 lg:text-left text-center  mt-12">
                         Taqseema, the easy to use Sports App coming soon to
                         Qatar
                       </p>
@@ -245,6 +245,10 @@ const [counterOn, setCounterOn] = useState(false);
                         Start for free
                       </button>
                     </div>
+                  </div>
+
+                  <div className="flex lg:hidden w-full m-2 p-2 ">
+                    <button className="bg-white p-3 rounded-lg font-bold  w-full ">START FOR FREE</button>
                   </div>
                   <div className="w-full lg:w-1/2 lg:pr-5 py-5 hidden lg:flex ">
 
@@ -266,7 +270,7 @@ const [counterOn, setCounterOn] = useState(false);
 
 
       <section className="bg-white rounded-2xl pt-12">
-        <div className="container max-w-[1200px] mx-auto sm:px-28 ">
+        <div className="container lg:max-w-[1200px] mx-auto  lg:p-0 p-3 lg:m-0 m-3">
           <div className="flex flex-wrap">
             <div className="w-full lg:w-1/2">
               <div className="">
@@ -331,79 +335,85 @@ const [counterOn, setCounterOn] = useState(false);
           <div className="max-w-[1100px] w-full mx-auto ">
             <h1 className="font-bold text-[#3735b6] lg:ml-4 lg:text-left text-center text-2xl ">WHY | TAQSEEMA</h1>
             <div className="mt-4  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[26px] ">
-              <div className="flex flex-col items-left  bg-[#d127b1]  cursor-pointer md:items-start w-full p-[30px] rounded-[20px] shadow-[0_24px_54px_#00000005] ">
-                <div className="text-center">
-                  <div className=" ">
+            <div className="flex flex-col items-center  bg-[#d127b1]  cursor-pointer  w-full p-[30px] rounded-[20px] shadow-[0_24px_54px_#00000005] ">
+                <div className="flex items-center">
+                  <div>
                     {" "}
                     <AiOutlineNotification size="36px" color="white" />
                   </div>
 
-                  <h1 className="text-[#531b49] text-xl font-bold mt-4">
-                    Increase sales and outreach
-                  </h1>
+                 
                 </div>
+                <h1 className="text-[#fff] text-xl font-bold mt-4 text-center">
+                   Increase sales and outreach
+                  </h1>
               </div>
-              <div className="flex flex-col items-center  bg-[#d127b1]  cursor-pointer md:items-start w-full p-[30px] rounded-[20px] shadow-[0_24px_54px_#00000005] ">
-                <div className="text-center">
+              <div className="flex flex-col items-center  bg-[#d127b1]  cursor-pointer  w-full p-[30px] rounded-[20px] shadow-[0_24px_54px_#00000005] ">
+                <div className="flex items-center">
                   <div>
                     {" "}
                     <AiOutlineTransaction size="36px" color="white" />
                   </div>
 
-                  <h1 className="text-[#531b49] text-xl font-bold mt-4">
+                 
+                </div>
+                <h1 className="text-[#fff] text-xl font-bold mt-4 text-center">
                     Enable reservations and online bookings
                   </h1>
-                </div>
               </div>
 
-              <div className="flex flex-col items-center bg-[#d127b1]  cursor-pointer md:items-start w-full p-[30px] rounded-[20px] shadow-[0_24px_54px_#00000005] ">
-                <div className="text-center">
+              <div className="flex flex-col items-center bg-[#d127b1]  cursor-pointer  w-full p-[30px] rounded-[20px] shadow-[0_24px_54px_#00000005] ">
+                <div className="flex items-center">
                   <div>
                     {" "}
                     <AiTwotoneCar size="36px" color="white" />
                   </div>
 
-                  <h1 className="text-[#531b49] text-xl font-bold mt-4">
+                 
+                </div>
+                <h1 className="text-[#fff] text-xl font-bold mt-4">
                     Tracking & progress
                   </h1>
-                </div>
               </div>
 
-              <div className="flex flex-col items-center bg-[#d127b1] cursor-pointer md:items-start w-full p-[30px] rounded-[20px] shadow-[0_24px_54px_#00000005] ">
-                <div className="text-center">
+              <div className="flex flex-col items-center bg-[#d127b1] cursor-pointer w-full p-[30px] rounded-[20px] shadow-[0_24px_54px_#00000005] ">
+                <div className="flex items-center">
                   <div>
                     {" "}
                     <AiTwotoneCar size="36px" color="white" />
                   </div>
 
-                  <h1 className="text-[#531b49] text-xl font-bold mt-4">
+                  
+                </div>
+                <h1 className="text-[#fff] text-xl font-bold mt-4 text-center">
                     Financial and transaction reports
                   </h1>
-                </div>
               </div>
 
-              <div className="flex flex-col items-center  bg-[#d127b1]  cursor-pointer md:items-start w-full p-[30px] rounded-[20px] shadow-[0_24px_54px_#00000005] ">
-                <div className="text-center">
-                  <div>
+              <div className="flex flex-col items-center  bg-[#d127b1]  cursor-pointer  w-full p-[30px] rounded-[20px] shadow-[0_24px_54px_#00000005] ">
+                <div className="flex items-center">
+                  <div className="">
                     {" "}
-                    <AiOutlineSolution className="justify-center" size="36px" color="white" />
+                    <AiOutlineSolution className="items-center" size="36px" color="white" />
                   </div>
-
-                  <h1 className="text-[#531b49] text-xl font-bold mt-4">
+       
+                  
+                </div>
+                <h1 className="text-[#fff] text-xl font-bold mt-4 text-center">
                     Flexible pricing, cancellation & rescheduling policies
                   </h1>
-                </div>
               </div>
 
-              <div className="flex flex-col items-center bg-[#d127b1] md:items-start  w-full p-[30px] rounded-[20px] shadow-[0_24px_54px_#00000005] hover:shadow-[0_24px_54px_#0000000D] transition ease-in-out ">
-                <div className="text-center">
+              <div className="flex flex-col items-center bg-[#d127b1]   w-full p-[30px] rounded-[20px] shadow-[0_24px_54px_#00000005] hover:shadow-[0_24px_54px_#0000000D] transition ease-in-out ">
+                <div className="flex item-center">
                   <div>
                     <AiOutlineStock size="36px" color="white" />
                   </div>
-                  <h1 className="text-[#531b49] text-xl font-bold mt-4">
+                  
+                </div>
+                <h1 className="text-[#fff] text-xl font-bold mt-4 text-center">
                     Real time alerts and notifications
                   </h1>
-                </div>
               </div>
             </div>
           </div>
@@ -458,21 +468,23 @@ const [counterOn, setCounterOn] = useState(false);
           onExit={() => setCounterOn(false)}
         />
         <div className=" py-2 w-full bg-[#7e22ce]  text-white">
-          <div className="grid grid-cols-5 gap-4 justify-items-center ">
+          <div className="grid grid-cols-6 gap-4 justify-items-center ">
+          <div className="text-3xl ">
+             
+            </div>
             <div className="text-3xl ">
               {" "}
               {counterOn && (
                 <CountUp start={0} end={6000} duration={2} delay={0} />
               )}
-              +<h1 className="text-xl font-bold mt-4 text-[]">PRODUCTS</h1>
+              +<h1 className="text-xl font-bold mt-4 text-[]">ACTIVE USERS</h1>
             </div>
-
-            <div className="text-3xl">
+            <div className="text-3xl ">
               {" "}
               {counterOn && (
-                <CountUp start={0} end={4000} duration={2} delay={0} />
+                <CountUp start={0} end={6000} duration={2} delay={0} />
               )}
-              +<h1 className="text-xl font-bold mt-4 text-[]">BOOKINGS</h1>
+              +<h1 className="text-xl font-bold mt-4 text-[]">TOTAL DOWNLOADS</h1>
             </div>
 
             <div className="text-3xl">
@@ -480,7 +492,7 @@ const [counterOn, setCounterOn] = useState(false);
               {counterOn && (
                 <CountUp start={0} end={8000} duration={2} delay={0} />
               )}
-              +<h1 className="text-xl font-bold mt-4 text-[]">GAMES</h1>
+              +<h1 className="text-xl font-bold mt-4 text-[]">ONLINE USERS</h1>
             </div>
 
             <div className="text-3xl pl-4">
@@ -488,14 +500,10 @@ const [counterOn, setCounterOn] = useState(false);
               {counterOn && (
                 <CountUp start={0} end={5000} duration={2} delay={0} />
               )}
-              +<h1 className="text-xl font-bold mt-4 text-[]">VENUS</h1>
+              +<h1 className="text-xl font-bold mt-4 text-[]">VENUES</h1>
             </div>
             <div className="lg:text-3xl pl-4">
-              {" "}
-              {counterOn && (
-                <CountUp start={0} end={8000} duration={2} delay={0} />
-              )}
-              +<h1 className="lg:text-xl font-bold mt-4 text-sm">PLAYERS</h1>
+            
             </div>
           </div>
         </div>
@@ -638,15 +646,15 @@ const [counterOn, setCounterOn] = useState(false);
       <footer className="text-white mt-2  bg-[#7e22ce] ">
         <div className="flex flex-wrap py-12">
           <div className="p-5  w-full md:w-1/4">
-            <h2 className="font-extrabold text-lg ">ABOUT US</h2>
-            <p className="text-white mt-3 font-bold text-justify">
+            <h2 className="font-semibold text-lg ">ABOUT US</h2>
+            <p className="text-white mt-3 font-normal text-justify">
             Looking venture justice in evident in totally he do ability.Looking venture justice in evident in totally he do ability.
             </p>
           </div>
           
           <div className="p-5  w-full md:w-1/4">
-            <h2 className="font-extrabold text-lg">QUICK LINKS</h2>
-            <p className="text-white mt-3 font-bold">
+            <h2 className="font-semibold text-lg">QUICK LINKS</h2>
+            <p className="text-white mt-3 font-normal">
               ABOUT US
               <br />
              
@@ -660,7 +668,7 @@ FEATURES
 
           <div className="p-5  w-full md:w-1/4">
           <div>
-    <span className="footer-title font-bold text-lg">NEWSLETTER</span> 
+    <span className="footer-title font-semibold text-lg">NEWSLETTER</span> 
     <div className="form-control w-60 rounded-lg mt-2">
       <label className="label ">
         <span className="label-text mt-2 text-lg">Enter your email address</span>
@@ -683,16 +691,7 @@ FEATURES
                 height={60}
                 
               />
-            </div>
-          </div>
-          
-        </div>
-
-
-
-    <div className="p-3 lg:flex bg-black w-full">
-
-      <div className=" flex lg:space-x-10 space-x-10  w-full lg:pl-14  ">
+ <div className=" flex  space-x-6 lg:mt-0 mt-2  w-full  ">
         <RiFacebookCircleLine size="24px" color="#fff" />
         <RiTwitterLine size="24px" color="#fff" />
         <RiInstagramLine size="24px" color="#fff" />
@@ -704,8 +703,20 @@ FEATURES
 
         <RiWhatsappLine size="24px" color="#fff" />
       </div>
+            </div>
+          </div>
+          
+        </div>
+
+
+
+    <div className="p-3 lg:flex bg-black w-full">
+
+     
         <div className="text-center w-full lg:mr-12 lg:mt-0 mt-2">
-          <h1 className="text-white text-center ">Copyright @2022 XYZ Powered By Thaksf</h1>
+        <h1 className="text-white font-semibold text-center ">TERMS & CONDITIONS | PRIVACY POLICY </h1>
+
+          <h1 className="text-white text-center font-semibold ">Copyrights Reserved By TAQSeema</h1>
           </div>
     </div>
 
