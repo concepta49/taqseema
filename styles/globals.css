@@ -46,15 +46,40 @@
 
 .black, .title {
   transition: opacity .3s;
+  text-align: left;
+
 }
 
 .thumbnails:hover {
   cursor: pointer;
   transform: scale(1.05);
   z-index: 20;
+  box-shadow: 2px 3px 10px #444444;
+
+
 }
 
 .thumbnails:hover .black,
 .thumbnails:hover .title {
   opacity: 0;
 }
+.containerss {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.containerss:hover .overlay {
+  opacity: 1;
+}
+.containerss .content {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 100%;
+  padding: 30px;
+}
+
+
+
