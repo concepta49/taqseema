@@ -666,7 +666,7 @@ function Homepage() {
                 </p>
               </div>
             </div>
-            <div className=" w-full lg:w-1/2 lg:pl-10 py-12 px-24 items-center">
+            <div className=" w-full lg:w-1/2 lg:pl-10 py-12 px-24 items-center text-center">
               <a
                 className="text-white text-xl font-[Poppins] cursor-pointer  hover:text-[black] duration-500"
                 href="#"
