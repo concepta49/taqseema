@@ -1,12 +1,13 @@
 import React, { useState } from "react";
+import { AppstoreOutlined, MailOutlined, SettingOutlined } from '@ant-design/icons';
 import { IoChevronDownOutline } from "react-icons/io5";
 import { AiOutlineMenuFold } from "react-icons/ai";
 import { HiBadgeCheck } from "react-icons/hi";
 import { Drawer } from "antd";
-import { Dropdown, Menu, Space } from "antd";
+import { Dropdown, Space } from "antd";
 import Image from "next/image";
 import Link from "next/link";
-import { RiFacebookCircleLine ,RiTwitterLine,RiInstagramLine ,RiLinkedinBoxLine,RiWhatsappLine} from "react-icons/ri";
+import { RiFacebookCircleLine ,RiTwitterLine,RiInstagramLine ,RiLinkedinBoxLine, RiMediumLine ,RiWhatsappLine, RiYoutubeLine} from "react-icons/ri";
 import {
   AiFillStar,
   AiOutlineArrowRight,
@@ -37,31 +38,35 @@ const images = [
 
 
 function Homepage() {
-  const [counterOn, setCounterOn] = useState(false);
+
+
+const [counterOn, setCounterOn] = useState(false);
+
+
   const [isNavExpanded, setIsNavExpanded] = useState(false);
   const handleToggle = () => setIsNavExpanded(!isNavExpanded);
 
-  const menu = (
-    <Menu
-      items={[
-        {
-          key: "1",
-          type: "group",
-          label: "Group title",
-          children: [
-            {
-              key: "1-1",
-              label: "1st menu item",
-            },
-            {
-              key: "1-2",
-              label: "2nd menu item",
-            },
-          ],
-        },
-      ]}
-    />
-  );
+  // const menu = (
+  //   <Menu
+  //     items={[
+  //       {
+  //         key: "1",
+  //         type: "group",
+  //         label: "Group title",
+  //         children: [
+  //           {
+  //             key: "1-1",
+  //             label: "1st menu item",
+  //           },
+  //           {
+  //             key: "1-2",
+  //             label: "2nd menu item",
+  //           },
+  //         ],
+  //       },
+  //     ]}
+  //   />
+  // );
 
   return (
     <div>
@@ -120,7 +125,7 @@ function Homepage() {
             </li>
           </ul>
 
-          <div className="hidden lg:flex mp-4 mr-20">
+          <div className="hidden lg:flex  pl-24">
           <a
               className="text-white text-xl font-[Poppins] cursor-pointer  hover:text-[black] duration-500"
               href="#"
@@ -139,97 +144,82 @@ function Homepage() {
             </a>
           </div>
 
-          <AiOutlineMenuFold
+          {/* <Menu
             size={30}
             color="white"
             onClick={handleToggle}
-            className="lg:hidden text-left"
-            placement="left"
-          />
-          <Drawer
-            width="100%"
-            visible={isNavExpanded}
-            placement="left"
-            onClose={handleToggle}
-            extra={
-              <Image
-                className=""
-                src="/images/logo.png"
-                alt="Pic"
-                width={120}
-                height={50}
-              />
-            }
-          >
+            className="lg:hidden"
+          /> */}
+
             <div className="grid text-xl place-items-center ">
               <ul className="mt-4 lg:hidden font-bold text-white">
                 <ul className=" lg:flex justify-center ">
-                  <li className="mx-4 my-6 md:my-0">
-                    <Link href="/">
-                      <a
-                        href="#"
-                        className="text-xl hover:text-[#3735b6] duration-500 text-[#9CA3AF]"
-                      >
-                        HOME
-                      </a>
-                    </Link>
-                  </li>
-                  <li className="mx-4 my-6 md:my-0">
-                    <Link href="/">
-                      <a
-                        href="#"
-                        className="text-xl hover:text-[#3735b6] duration-500 text-[#9CA3AF]"
-                      >
-                        ABOUT
-                      </a>
-                    </Link>
-                  </li>
-                  <li className="mx-4 my-6 md:my-0">
-                    <Link href="/">
-                      <a
-                        href="#"
-                        className="text-xl hover:text-[#3735b6] duration-500 text-white"
-                      >
-                        HOW TO USE{" "}
-                      </a>
-                    </Link>
-                  </li>
-                  <li className="mx-4 my-6 md:my-0">
-                    <Link href="/">
-                      <a
-                        href="#"
-                        className="text-xl hover:text-[#3735b6] duration-500 text-white"
-                      >
-                        FAQ
-                      </a>
-                    </Link>
-                  </li>
-                  <li className="mx-4 my-6 md:my-0">
-                    <Link href="/">
-                      <a
-                        href="#"
-                        className="text-xl hover:text-[#3735b6] duration-500 text-[#f8f9fa]"
-                      >
-                        CONTACT
-                      </a>
-                    </Link>
-                  </li>
+                <li className="mx-4 my-6 md:my-0 pl-24">
+              <Link href="/">
+                <a
+                  href="#"
+                  className="text-xl hover:text-[#c026d3] duration-500 text-white"
+                >
+                  HOME
+                </a>
+              </Link>
+            </li>
+            <li className="mx-4 my-6 md:my-0 pl-24">
+              <Link href="/">
+                <a
+                  href="#"
+                  className="text-xl hover:text-[#c026d3] duration-500 text-white"
+                >
+                  ABOUT US
+                </a>
+              </Link>
+            </li>
+            <li className="mx-4 my-6 md:my-0 pl-24">
+              <Link href="/">
+                <a
+                  href="#"
+                  className="text-xl hover:text-[#c026d3] duration-500 text-white"
+                >
+                  FEATURES
+                </a>
+              </Link>
+            </li>
+            <li className="mx-4 my-6 md:my-0 pl-24">
+              <Link href="/">
+                <a
+                  href="#"
+                  className="text-xl hover:text-[#c026d3] duration-500 text-white"
+                >
+                  PLANS
+                </a>
+              </Link>
+            </li>
+            <li className="mx-4 my-6 md:my-0 pl-24">
+              <Link href="/">
+                <a
+                  href="#"
+                  className="text-xl hover:text-[#c026d3] duration-500 text-white"
+                >
+                  FAQ
+                </a>
+              </Link>
+            </li>
                 </ul>
               </ul>
             </div>
-          </Drawer>
+          
         </header>
 
       </section>
 
 
       <section className="relative flex w-full bg-gradient-to-r from-[#5c064c] to-[#e81eca10] ">
-          <div className="w-full relative h-[750px] lg:h-[650px] md:h-[540px] lg:text-center  text-left   ">
+          <div className="w-full relative h-[850px] lg:h-[650px] md:h-[540px] lg:text-center  text-left   ">
             <video
               autoPlay
               loop
               muted
-              className="absolute max-w-none  w-full object-cover  z-0  h-[650px] lg:h-[650px] md:h-[540px] lg:text-center   "
+              className="absolute max-w-none  w-full object-cover  z-0  h-[850px] lg:h-[650px] md:h-[540px] lg:text-center   "
             >
               <source
                 src="/videos/5 background video effects for Games Sports_Trim.mp4"
@@ -237,34 +227,33 @@ function Homepage() {
               />
             </video>
 
-            <div className="absolute top-0 w-full bg-gradient-to-r from-[#5c064c] to-[#e81eca10]  h-[750px] lg:h-[650px] md:h-[540px]">
+            <div className="absolute top-0 w-full bg-gradient-to-r from-[#5c064c] to-[#e81eca10]  h-[850px] lg:h-[650px] md:h-[540px] ">
               <div className="container mx-auto sm:px-28 ">
                 <div className="flex flex-wrap">
                   <div className="w-full lg:w-1/2  py-12 ">
                     <div className="mr-8 mb-4 text-white">
-                      <h4 className="text-5xl md:text-5xl lg:text-8xl font-bold text-white text-left">
+                      <h4 className="text-5xl md:text-5xl lg:text-8xl font-bold text-white lg:text-left text-center lg:mt-0 mt-12 ">
                         PLAYING MADE EASY
                       </h4>
-                      <p className="text-3xl mt-4 text-left">
+                      <p className="text-3xl mt-4 lg:text-left text-center lg:mt-0 mt-12">
                         Taqseema, the easy to use Sports App coming soon to
                         Qatar
                       </p>
                     </div>
-                    <div className="w-full lg:w-1/2 flex ">
+                    <div className="lg:flex hidden w-full lg:w-1/2  lg:mt-0 mt-12">
                       <button className="text-black p-4 text-sm font-bold bg-white rounded-xl mt-6 text-left mr-4">
                         Start for free
                       </button>
-                      <button className=""></button>
                     </div>
                   </div>
-                  <div className="w-full lg:w-1/2 lg:pr-5 py-5 hidden lg:flex mt-12">
+                  <div className="w-full lg:w-1/2 lg:pr-5 py-5 hidden lg:flex ">
 
                   <Image
                 className="ml-auto my-auto opacity-3"
                 src="/images/Untitled-design-86.png"
                 alt="Pic"
                 width={500}
-                height={600}
+                height={650}
               />
                     
                   </div>
@@ -290,21 +279,21 @@ function Homepage() {
                   basic needs to have a game is all centrally manageable in just
                   a few clicks.
                 </p>
-                <div className="flex mt-4 lg:text-left text-center">
+                <div className="flex mt-4 lg:text-left ">
                 <HiBadgeCheck size="26px" className="text-[#3735b6]" />
-                <h1 className="font-semibold text-black text-lg">
+                <h1 className="font-semibold text-black lg:text-lg text-sm">
                   Discover Venues , Events, Deals, Friends and Tip
                 </h1>
                    </div>
-              <div className="flex mt-4">
+              <div className="flex mt-4 lg:text-left">
                 <HiBadgeCheck size="26px" className="text-[#3735b6]" />
-                <h1 className="font-semibold text-black text-lg">
+                <h1 className="font-semibold text-black lg:text-lg text-sm">
                 Make New friends and network
                 </h1>
                       </div>
-                 <div className="flex mt-4">
+                 <div className="flex mt-4 lg:text-left ">
                 <HiBadgeCheck size="26px" className="text-[#3735b6]" />
-                <h1 className="font-semibold text-black text-lg">
+                <h1 className="font-semibold text-black lg:text-lg text-sm">
                 Buy all your sports needs with the best deals
                 </h1>
              </div>
@@ -312,13 +301,13 @@ function Homepage() {
                 
                 
               </div>
-              <div className="mt-10 flex">
-                <div className="">
+              <div className="mt-10  w-full ">
+                <div className="w-full lg:w-1/2">
                   <a
                     className="text-white text-xl font-[Poppins] cursor-pointer  hover:text-[black] duration-500"
                     href="#"
                   >
-                    <button className="animate-bounce  mt-4  mb-12 mr-4 py-[4px] px-[30px] bg-[#7e22ce] border-[#7e22ce] border-2 rounded-lg text-lg">
+                    <button className="animate-bounce  mt-4  mb-12 lg:mr-4 py-[4px] lg:w-full w-full bg-[#c026d3] border-[#c026d3] border-2 rounded-lg text-lg font-bold">
                       LEARN MORE
                     </button>
                   </a>{" "}
@@ -340,7 +329,7 @@ function Homepage() {
 
         <section className="bg-[#F3F4F6] font-Poppins pt-8 ">
           <div className="max-w-[1100px] w-full mx-auto ">
-            <h1 className="font-bold text-[#3735b6] ml-4 text-2xl ">WHY | TAQSEEMA</h1>
+            <h1 className="font-bold text-[#3735b6] lg:ml-4 lg:text-left text-center text-2xl ">WHY | TAQSEEMA</h1>
             <div className="mt-4  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[26px] ">
               <div className="flex flex-col items-left  bg-[#d127b1]  cursor-pointer md:items-start w-full p-[30px] rounded-[20px] shadow-[0_24px_54px_#00000005] ">
                 <div className="text-center">
@@ -423,10 +412,10 @@ function Homepage() {
 
         <section className="bg-[#F3F4F6] font-Poppins py-10 ">
           
-          <div className="contents max-w-[1100px] pt-18 ">
+          <div className="contents lg:max-w-[1100px] w-full pt-18 ">
 
-    <div className="photos">
-      <div className="thumbnails">
+    <div className="lg:flex  w-full photos">
+      <div className="lg:flex lg:w-1/3 thumbnails">
       <Image
                 className="ml-auto my-auto opacity-3"
                 src="/images/Untitled-design-card3.jpg"
@@ -434,10 +423,10 @@ function Homepage() {
                 width={300}
                 height={300}
               />        <div className="black"></div>
-        <div className="title font-bold lg:text-4xl">FIND GAMES</div>
+        <div className="title font-bold text-4xl text-center">FIND GAMES</div>
       </div>
 
-      <div className="thumbnails">
+      <div className="lg:flex lg:w-1/3 thumbnails">
       <Image
                 className="ml-auto my-auto opacity-3"
                 src="/images/Untitled-design-card2.jpg"
@@ -445,10 +434,10 @@ function Homepage() {
                 width={300}
                 height={300}
               />          <div className="black"></div>
-        <div className="title font-bold lg:text-4xl">FIND PLAYERS</div>
+        <div className="title font-bold text-4xl">FIND PLAYERS</div>
       </div>
 
-      <div className="thumbnails">
+      <div className="lg:flex lg:w-1/3 thumbnails">
       <Image
                 className="ml-auto my-auto opacity-3"
                 src="/images/Untitled-designcard.jpg"
@@ -456,20 +445,20 @@ function Homepage() {
                 width={300}
                 height={300}
               />          <div className="black"></div>
-        <div className="title font-bold lg:text-4xl">FIND GROUNDS</div>
+        <div className="title font-bold text-4xl">FIND GROUNDS</div>
       </div>
     </div>
 </div>
 
           </section>
        
-          <section className="">
+          <section className="hidden lg:flex">
         <ScrollTrigger
           onEnter={() => setCounterOn(true)}
           onExit={() => setCounterOn(false)}
         />
         <div className=" py-2 w-full bg-[#7e22ce]  text-white">
-          <div className="grid grid-cols-5 gap-4 justify-items-center l">
+          <div className="grid grid-cols-5 gap-4 justify-items-center ">
             <div className="text-3xl ">
               {" "}
               {counterOn && (
@@ -536,8 +525,6 @@ function Homepage() {
                GROUND(A)
               </h1>
               <div className="flex text-[#FBBF24] gap-[6px] lg:mt-2">
-                <AiFillStar size="24px" color="#FBBF24" />
-                <AiFillStar size="24px" color="#FBBF24" />
                 <AiFillStar size="24px" color="#FBBF24" />
                 <AiFillStar size="24px" color="#FBBF24" />
                 <AiFillStar size="24px" color="#FBBF24" />
@@ -615,9 +602,7 @@ function Homepage() {
           
         </div>
       </section>
-     
-
-
+    
 
       <section className="relative bg-[#F3F4F6] rounded-2xl pt-12 pb-8 mx-auto ">
           <div className="container mx-auto sm:px-2 max-w-[1000px]">
@@ -625,10 +610,10 @@ function Homepage() {
               
               <div className="w-full lg:w-1/2  py-5">
                 <div className="">
-                  <h2 className="text-4xl md:text-5xl font-semibold text-[#86198f] text-justify">
+                  <h2 className="lg:text-4xl text-2xl md:text-5xl font-semibold text-[#86198f] lg:text-justify text-center ">
                     PARTNER WITH US
                   </h2>
-                  <p className="mt-8 text-black font-semibold text-lg text-justify">
+                  <p className="mt-8 text-black font-semibold text-lg lg:text-justify text-center">
                     We empower businesses targeting sports and fitness consumers
                     and help them engage with our community to increase
                     outreach. Additionally, our technology solutions also help
@@ -642,16 +627,13 @@ function Homepage() {
                   className="text-white text-xl font-[Poppins] cursor-pointer  hover:text-[black] duration-500"
                   href="#"
                 >
-                  <button className="mt-12 mb-18 ml-16 py-[4px] px-[30px] bg-[#7e22ce] border-[#7e22ce] border-2 rounded-lg text-lg font-bold ">
+                  <button className="lg:mt-12 lg:mb-18 ml-16 py-[4px] px-[30px] bg-[#c026d3] border-[#c026d3] border-2 rounded-lg text-lg font-bold ">
                     LIST YOUR GROUNDS
                   </button>
                 </a>{" "}
               </div>
             </div>
           </div>
-
-          
-            
         </section>
       <footer className="text-white mt-2  bg-[#7e22ce] ">
         <div className="flex flex-wrap py-12">
@@ -705,25 +687,27 @@ FEATURES
           </div>
           
         </div>
-        <div className="p-3 flex bg-black w-full">
-        <div className="flex  space-x-6 w-1/2 mx-auto">
+
+
+
+    <div className="p-3 lg:flex bg-black w-full">
+
+      <div className=" flex lg:space-x-10 space-x-10  w-full lg:pl-14  ">
         <RiFacebookCircleLine size="24px" color="#fff" />
         <RiTwitterLine size="24px" color="#fff" />
-
         <RiInstagramLine size="24px" color="#fff" />
 
-        <RiLinkedinBoxLine size="24px" color="#fff" />
+<        RiLinkedinBoxLine size="24px" color="#fff" />
+        <RiMediumLine size="24px" color="#fff" />
+
+        <RiYoutubeLine size="24px" color="#fff" />
 
         <RiWhatsappLine size="24px" color="#fff" />
-
-
-           
-          <div className=" mx-auto">
-          <h1 className="text-white ml-6 ">Copyright @2022 XYZ  Powered By Thaksf</h1>
+      </div>
+        <div className="text-center w-full lg:mr-12 lg:mt-0 mt-2">
+          <h1 className="text-white text-center ">Copyright @2022 XYZ Powered By Thaksf</h1>
           </div>
-        </div>
-        
-        </div>
+    </div>
 
       </footer>
     </div>

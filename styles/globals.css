@@ -6,12 +6,11 @@
 .photos {
   width: 95%;
   margin: 0 auto 20px;
-  display: flex;
   justify-content: center;
 }
 
 .thumbnails {
-  width: calc(100% / 3);
+
   height: 400px;
   margin: 10px;
   display: flex;
