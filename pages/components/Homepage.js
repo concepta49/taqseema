@@ -4,6 +4,8 @@ import {
   MailOutlined,
   SettingOutlined,
 } from "@ant-design/icons";
+import {  Menu } from "antd";
+
 import { IoChevronDownOutline } from "react-icons/io5";
 import { AiOutlineMenuFold } from "react-icons/ai";
 import { HiBadgeCheck } from "react-icons/hi";
@@ -52,29 +54,29 @@ function Homepage() {
   const [counterOn, setCounterOn] = useState(false);
 
   const [isNavExpanded, setIsNavExpanded] = useState(false);
-  const handleToggle = () => setIsNavExpanded(!isNavExpanded);
+  const handleToggle = () => setIsNavExpanded(isNavExpanded);
 
-  // const menu = (
-  //   <Menu
-  //     items={[
-  //       {
-  //         key: "1",
-  //         type: "group",
-  //         label: "Group title",
-  //         children: [
-  //           {
-  //             key: "1-1",
-  //             label: "1st menu item",
-  //           },
-  //           {
-  //             key: "1-2",
-  //             label: "2nd menu item",
-  //           },
-  //         ],
-  //       },
-  //     ]}
-  //   />
-  // );
+  const menu = (
+    <Menu
+      items={[
+        {
+          key: "1",
+          type: "group",
+          label: "Group title",
+          children: [
+            {
+              key: "1-1",
+              label: "1st menu item",
+            },
+            {
+              key: "1-2",
+              label: "2nd menu item",
+            },
+          ],
+        },
+      ]}
+    />
+  );
 
   return (
     <div>
@@ -133,7 +135,7 @@ function Homepage() {
             </li>
           </ul>
 
-          <div className="hidden lg:flex  pl-24">
+          <div className="hidden lg:flex  pl-24" id="mobileMenu">
             <a
               className="text-white text-xl font-[Poppins] cursor-pointer  hover:text-[black] duration-500"
               href="#"
@@ -152,12 +154,14 @@ function Homepage() {
             </a>
           </div>
 
-          {/* <Menu
-            size={30}
-            color="white"
+          
+          <Drawer
+            width="100%"
+            visible={isNavExpanded}
+            placement="left"
+            onClose={handleToggle}
             onClick={handleToggle}
-            className="lg:hidden"
-          /> */}
+          >
 
           <div className="grid text-xl place-items-center ">
             <ul className="mt-4 lg:hidden font-bold text-white">
@@ -215,8 +219,13 @@ function Homepage() {
               </ul>
             </ul>
           </div>
+          </Drawer>
         </header>
       </section>
+
+
+
+
 
       <section className="relative flex w-full bg-gradient-to-r from-[#5c064c] to-[#e81eca10] ">
         <div className="w-full relative h-[850px] lg:h-[650px] md:h-[540px] lg:text-center  text-left   ">
@@ -272,7 +281,7 @@ function Homepage() {
       </section>
 
       <section className="bg-white rounded-2xl pt-12">
-        <div className="container lg:max-w-[1100px] mx-auto  p-4">
+        <div className="container lg:max-w-[1000px] mx-auto  p-4">
           <div className="flex flex-wrap">
             <div className="w-full lg:w-1/2">
               <div className="">
@@ -420,7 +429,7 @@ function Homepage() {
                 <div className="containerss">
                   <Image
                     className="ml-auto my-auto opacity-3"
-                    src="/images/play.jpg"
+                    src="/images/gm.jpg"
                     alt="Pic"
                     width={300}
                     height={300}
@@ -440,7 +449,7 @@ function Homepage() {
                   <hr className="mt-36 border-2 bg-[#d127b1] border-[#d127b1] w-2/3" />
                 </div>
                 <div className="title font-bold text-4xl">
-                  FIND | PLAYERS
+                  FIND | GAMES
                 </div>
               </div>
 
@@ -476,7 +485,7 @@ function Homepage() {
                 <div className="containerss">
                   <Image
                     className="ml-auto my-auto opacity-3"
-                    src="/images/gm.jpg"
+                    src="/images/play.jpg"
                     alt="Pic"
                     width={300}
                     height={300}
@@ -496,7 +505,7 @@ function Homepage() {
                   <hr className="mt-36 border-2 bg-[#d127b1] border-[#d127b1] w-2/3" />
                 </div>
                 <div className="title font-bold text-4xl">
-                  FIND | GAMES
+                  FIND | PLAYERS
                 </div>
               </div>
             </div>
