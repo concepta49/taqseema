@@ -13,7 +13,7 @@ const Navbar = () => {
   const [activeIdx, setActiveIdx] = useState(-1);
 
   return (
-    <header className="lg:hidden flex">
+    <header className="lg:hidden ">
       <nav className={`nav`}  >
         <Link href={"/"}>
           <a>

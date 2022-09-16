@@ -24,7 +24,7 @@ import {
 } from "react-icons/ri";
 import {
   AiFillStar,
-  AiOutlineArrowRight,
+  AiOutlineFileDone,
   AiOutlineSolution,
   AiOutlineTransaction,
   AiOutlineStock,
@@ -384,7 +384,7 @@ function Homepage() {
                 <div className="flex items-center">
                   <div>
                     {" "}
-                    <AiTwotoneCar size="36px" color="white" />
+                    <AiOutlineFileDone size="36px" color="white" />
                   </div>
                 </div>
                 <h1 className="text-[#fff] text-xl font-bold mt-4 text-center">
@@ -744,13 +744,8 @@ function Homepage() {
 
           <div className="p-5  w-full md:w-1/4">
             <div className="mt-  gap-4">
-              <Image src="/images/ios.png" alt="l" width={180} height={60} />
-              <Image
-                src="/images/play-store-logo.png"
-                alt="l"
-                width={180}
-                height={60}
-              />
+              <Image src="/images/apple-app-store.png" alt="l" width={200} height={120} />
+             
               <div className=" flex  space-x-4 lg:mt-0 mt-4  w-full  ">
                 <RiFacebookCircleLine size="28px" color="#black" />
                 <RiTwitterLine size="28px" color="#fff" />
