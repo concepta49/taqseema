@@ -677,7 +677,7 @@ function Homepage() {
             </div>
             <div className="lg:flex hidden w-full lg:w-1/2 lg:pl-10 py-12 px-24 items-center text-center">
               <a
-                className="text-white text-xl font-[Poppins] cursor-pointer  hover:text-[black] duration-500"
+                className="text-white text-xl font-[Poppins] cursor-pointer  hover:text-[white] duration-500"
                 href="#"
               >
                 <button className="lg:mt-12 lg:mb-18 lg:ml-16 py-[4px] px-10 max-w-full bg-[#c026d3] border-[#c026d3] border-2 rounded-lg text-lg font-bold ">
@@ -686,7 +686,7 @@ function Homepage() {
               </a>{" "}
             </div>
             <div className="flex lg:hidden w-full m-2 p-2 ">
-                  <button className="bg-[#c026d3] p-3 rounded-lg font-bold  w-full ">
+                  <button className="bg-[#c026d3] cursor-pointer  hover:text-[white] duration-500p-3 rounded-lg font-bold  w-full ">
                     LIST YOUR GROUNDS
                   </button>
                 </div>
