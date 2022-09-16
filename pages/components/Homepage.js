@@ -4,7 +4,7 @@ import {
   MailOutlined,
   SettingOutlined,
 } from "@ant-design/icons";
-import {  Menu } from "antd";
+import { Menu } from "antd";
 
 import { IoChevronDownOutline } from "react-icons/io5";
 import { AiOutlineMenuFold } from "react-icons/ai";
@@ -80,152 +80,7 @@ function Homepage() {
 
   return (
     <div>
-      <section className="bg-[#18181b] lg:mx-auto opacity-3">
-        <header className="relative max-w-[1640px] px-3 py-4 lg:p-2  lg:mx-auto flex justify-between items-center">
-          <ul className="hidden lg:flex  text-center text-bold">
-            <li className="mx-4 my-6 md:my-0 pl-36">
-              <Link href="/">
-                <a
-                  href="#"
-                  className="text-xl hover:text-[#c026d3] text-bold duration-500 text-white"
-                >
-                  HOME
-                </a>
-              </Link>
-            </li>
-            <li className="mx-4 my-6 md:my-0">
-              <Link href="/">
-                <a
-                  href="#"
-                  className="text-xl hover:text-[#c026d3] duration-500 text-white"
-                >
-                  ABOUT US
-                </a>
-              </Link>
-            </li>
-            <li className="mx-4 my-6 md:my-0">
-              <Link href="/">
-                <a
-                  href="#"
-                  className="text-xl hover:text-[#c026d3] duration-500 text-white"
-                >
-                  FEATURES{" "}
-                </a>
-              </Link>
-            </li>
-            <li className="mx-4 my-6 md:my-0">
-              <Link href="/">
-                <a
-                  href="#"
-                  className="text-xl hover:text-[#c026d3] duration-500 text-white"
-                >
-                  PLANS
-                </a>
-              </Link>
-            </li>
-            <li className="mx-4 my-6 md:my-0">
-              <Link href="/">
-                <a
-                  href="#"
-                  className="text-xl hover:text-[#c026d3] duration-500 text-white"
-                >
-                  FAQ
-                </a>
-              </Link>
-            </li>
-          </ul>
-
-          <div className="hidden lg:flex  pl-24" id="mobileMenu">
-            <a
-              className="text-white text-xl font-[Poppins] cursor-pointer  hover:text-[black] duration-500"
-              href="#"
-            >
-              <button className="mt-2 mb-2 mr-4 py-[6px] px-[30px] bg-[#c026d3] border-[#c026d3] border-2 rounded-lg ">
-                SIGN IN
-              </button>
-            </a>
-            <a
-              className="text-white text-xl font-[Poppins] cursor-pointer  hover:text-[black] duration-500"
-              href="#"
-            >
-              <button className="mt-2 mb-2 mr-4 py-[6px] px-[30px] bg-[#c026d3] border-[#c026d3] border-2 rounded-lg ">
-                SIGN UP
-              </button>
-            </a>
-          </div>
-
-          
-          <Drawer
-            width="100%"
-            visible={isNavExpanded}
-            placement="left"
-            onClose={handleToggle}
-            onClick={handleToggle}
-          >
-
-          <div className="grid text-xl place-items-center ">
-            <ul className="mt-4 lg:hidden font-bold text-white">
-              <ul className=" lg:flex justify-center ">
-                <li className="mx-4 my-6 md:my-0 pl-24">
-                  <Link href="/">
-                    <a
-                      href="#"
-                      className="text-xl hover:text-[#c026d3] duration-500 text-white"
-                    >
-                      HOME
-                    </a>
-                  </Link>
-                </li>
-                <li className="mx-4 my-6 md:my-0 pl-24">
-                  <Link href="/">
-                    <a
-                      href="#"
-                      className="text-xl hover:text-[#c026d3] duration-500 text-white"
-                    >
-                      ABOUT US
-                    </a>
-                  </Link>
-                </li>
-                <li className="mx-4 my-6 md:my-0 pl-24">
-                  <Link href="/">
-                    <a
-                      href="#"
-                      className="text-xl hover:text-[#c026d3] duration-500 text-white"
-                    >
-                      FEATURES
-                    </a>
-                  </Link>
-                </li>
-                <li className="mx-4 my-6 md:my-0 pl-24">
-                  <Link href="/">
-                    <a
-                      href="#"
-                      className="text-xl hover:text-[#c026d3] duration-500 text-white"
-                    >
-                      PLANS
-                    </a>
-                  </Link>
-                </li>
-                <li className="mx-4 my-6 md:my-0 pl-24">
-                  <Link href="/">
-                    <a
-                      href="#"
-                      className="text-xl hover:text-[#c026d3] duration-500 text-white"
-                    >
-                      FAQ
-                    </a>
-                  </Link>
-                </li>
-              </ul>
-            </ul>
-          </div>
-          </Drawer>
-        </header>
-      </section>
-
-
-
-
+     
 
       <section className="relative flex w-full bg-gradient-to-r from-[#5c064c] to-[#e81eca10] ">
         <div className="w-full relative h-[850px] lg:h-[650px] md:h-[540px] lg:text-center  text-left   ">
@@ -425,7 +280,7 @@ function Homepage() {
         <section className="bg-[#F3F4F6] font-Poppins py-10 ">
           <div className="contents lg:max-w-[1100px] w-full pt-18 ">
             <div className="lg:flex  w-full photos">
-            <div className="lg:flex lg:w-1/3 thumbnails">
+              <div className="lg:flex lg:w-1/3 thumbnails">
                 <div className="containerss">
                   <Image
                     className="ml-auto my-auto opacity-3"
@@ -448,9 +303,7 @@ function Homepage() {
                   {" "}
                   <hr className="mt-36 border-2 bg-[#d127b1] border-[#d127b1] w-2/3" />
                 </div>
-                <div className="title font-bold text-4xl">
-                  FIND | GAMES
-                </div>
+                <div className="title font-bold text-4xl">FIND | GAMES</div>
               </div>
 
               <div className="lg:flex lg:w-1/3 thumbnails">
@@ -504,9 +357,7 @@ function Homepage() {
                   {" "}
                   <hr className="mt-36 border-2 bg-[#d127b1] border-[#d127b1] w-2/3" />
                 </div>
-                <div className="title font-bold text-4xl">
-                  FIND | PLAYERS
-                </div>
+                <div className="title font-bold text-4xl">FIND | PLAYERS</div>
               </div>
             </div>
           </div>
@@ -686,10 +537,10 @@ function Homepage() {
               </a>{" "}
             </div>
             <div className="flex lg:hidden w-full m-2 p-2 ">
-                  <button className="bg-[#c026d3] cursor-pointer  hover:text-[white] duration-500p-3 rounded-lg font-bold  w-full ">
-                    LIST YOUR GROUNDS
-                  </button>
-                </div>
+              <button className="bg-[#c026d3] cursor-pointer  hover:text-[white] duration-500p-3 rounded-lg font-bold  w-full ">
+                LIST YOUR GROUNDS
+              </button>
+            </div>
           </div>
         </div>
       </section>
@@ -744,8 +595,13 @@ function Homepage() {
 
           <div className="p-5  w-full md:w-1/4">
             <div className="mt-  gap-4">
-              <Image src="/images/apple-app-store.png" alt="l" width={200} height={120} />
-             
+              <Image
+                src="/images/apple-app-store.png"
+                alt="l"
+                width={200}
+                height={120}
+              />
+
               <div className=" flex  space-x-4 lg:mt-0 mt-4  w-full  ">
                 <RiFacebookCircleLine size="28px" color="#black" />
                 <RiTwitterLine size="28px" color="#fff" />
