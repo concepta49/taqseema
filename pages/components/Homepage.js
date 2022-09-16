@@ -654,10 +654,10 @@ function Homepage() {
           <div className="flex flex-wrap">
             <div className="w-full lg:w-1/2  py-5">
               <div className="">
-                <h2 className="lg:text-4xl text-2xl md:text-5xl font-semibold text-[#86198f] lg:text-justify text-justify ">
+                <h2 className="lg:text-4xl text-2xl md:text-5xl font-semibold text-[#86198f] lg:text-justify text-center ">
                   PARTNER WITH US
                 </h2>
-                <p className="mt-8 text-black font-semibold text-lg lg:text-justify text-justify">
+                <p className="mt-8 text-black font-semibold text-lg lg:text-justify text-center">
                   We empower businesses targeting sports and fitness consumers
                   and help them engage with our community to increase outreach.
                   Additionally, our technology solutions also help providers
@@ -666,7 +666,7 @@ function Homepage() {
                 </p>
               </div>
             </div>
-            <div className=" w-full lg:w-1/2 lg:pl-10 py-12 px-24 items-center text-center">
+            <div className="lg:flex hidden w-full lg:w-1/2 lg:pl-10 py-12 px-24 items-center text-center">
               <a
                 className="text-white text-xl font-[Poppins] cursor-pointer  hover:text-[black] duration-500"
                 href="#"
@@ -676,6 +676,11 @@ function Homepage() {
                 </button>
               </a>{" "}
             </div>
+            <div className="flex lg:hidden w-full m-2 p-2 ">
+                  <button className="bg-[#c026d3] p-3 rounded-lg font-bold  w-full ">
+                    LIST YOUR GROUNDS
+                  </button>
+                </div>
           </div>
         </div>
       </section>
